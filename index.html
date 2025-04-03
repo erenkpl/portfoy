@@ -9,15 +9,23 @@
     <h1>Hoş geldiniz! Bu benim portföyüm.</h1>
     <p>İçerik burada yer alacak...</p>
     <button onclick="newFunction()">
-        Melabaaaa
+        Okudum, onaylıyorum.
     </button>
+    <div id="count">0</div>
     <script>
+        let count = 0
         function newFunction(){
-            alert("Butona tıkladınız.")
+            alert("Sözleşmeyi kabul ettiniz!")
+            count ++
         }
     </script>
     <button onclick="window.location.href='https://erenkpl.github.io/portfoy/mainpage'">
         Projelere gitmek için tıkla
     </button>
+    <script>
+        if (count == 1){
+            window.location.href="https://erenkpl.github.io/portfoy/sozlesme";
+        }
+    </script>
 </body>
 </html>
