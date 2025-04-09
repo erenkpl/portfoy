@@ -8,8 +8,8 @@ body {
 }
 
 .custom-button{
-    background-color: aquamarine;
-    color: antiquewhite;
+    background-color: rgb(74, 197, 156);
+    color: rgb(38, 52, 52);
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -25,7 +25,7 @@ body {
 
 }
 .custom-button:hover{
-    background-color: darkgreen;
+    background-color: rgb(59, 125, 88);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
