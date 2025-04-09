@@ -5,7 +5,7 @@ body {
     padding: 0;
     color:lightpink;
     background-color: #5c5cad;
-    margin-left: 15px; /* Header için güncelle */
+    text-align: left+15px;
 }
 
 .custom-button{
