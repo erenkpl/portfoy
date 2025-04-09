@@ -5,6 +5,7 @@ body {
     padding: 0;
     color:lightpink;
     background-color: #5c5cad;
+    margin-left: 15px;
 }
 
 .custom-button{
@@ -23,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 15px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 
 }
