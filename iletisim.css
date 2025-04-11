@@ -1,0 +1,21 @@
+.iletisim-formu{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+.iletisim-formu input, .iletisim-formu textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.iletisim-formu button{
+    background-color: #457b9d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
