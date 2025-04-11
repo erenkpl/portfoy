@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #f1faee;
+}
+
+.kutu{ 
+    background-color: #a8dadc;
+    border: 2px solid #457b9d;
+    padding: 20px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .kutu{
+        margin-bottom: 10px;
+    }
+
+}
