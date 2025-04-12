@@ -16,26 +16,26 @@
         <!--Isim ve Soyisim alani-->
         <div class="isim">
             <div class="iletisim-formu">
-                <label for="isim">İsim:</label>
+                <label for="isim" class="baslik">İsim:</label>
                 <input type="text" id="isim" name="isim" class="kutu" required>
             </div>
 
             <div class="iletisim-formu">
-                <label for="soyisim">Soyisim:</label>
+                <label for="soyisim" class="baslik">Soyisim:</label>
                 <input type="text" id="soyisim" name="soyisim" class="kutu" required>
             </div>
         </div>
 
         <!--Email Alani-->
-        <label for="email">Email:</label>
+        <label for="email" class="baslik">Email:</label>
         <input type="email" id="email" name="email" class="kutu" required>
 
         <!--Mesaj Alani-->
-        <label for="mesaj">Mesaj:</label>
+        <label for="mesaj" class="baslik">Mesaj:</label>
         <textarea id="mesaj" name="mesaj" rows="4" class="kutu" required></textarea>
 
         <!--Sehir Secimi-->
-        <label for="sehir">Şehir:</label>
+        <label for="sehir" class="baslik">Şehir:</label>
         <select class="kutu" id="sehir" name="sehir">
             <option value="ankara" selected>Ankara</option>
             <option value="istanbul">İstanbul</option>
@@ -45,21 +45,32 @@
         <!--Hatirlama Opsiyonu-->
         <div>
             <input type="checkbox" id="hatirla" name="hatirla">
-            <label>Beni Hatırla</label>
+            <label >Beni Hatırla</label>
         </div>
 
         <!--Cinsiyet Secimi-->
-        <div>
-            <label>Cinsiyet:</label>
-            
-            <input type="radio" id="erkek" name="cinsiyet">
-            <label for="erkek">Erkek</label>
+        <div class="isim">
 
-            <input type="radio" id="kadin" name="cinsiyet">
-            <label for="kadin">Kadın</label>
+            <label class="baslik">Cinsiyet:</label>
 
-            <input type="radio" id="Atak Helikopteri" name="cinsiyet">
-            <label for="Atak Helikopteri">Atak Helikopteri</label>
+            <div class="radio">
+                
+                <div>
+                    <input type="radio" id="erkek" name="cinsiyet">
+                    <label for="erkek">Erkek</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="kadin" name="cinsiyet">
+                    <label for="kadin">Kadın</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Atak Helikopteri" name="cinsiyet">
+                    <label for="Atak Helikopteri">Atak Helikopteri</label>
+                </div>
+                
+            </div>
         </div>
 
         <button type="submit">Gönder</button>

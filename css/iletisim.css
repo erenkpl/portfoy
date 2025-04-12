@@ -4,6 +4,7 @@ body{
 
 p{
     font-size: 20px;
+    margin-bottom: 25px;
 }
 
 select, option{
@@ -20,25 +21,40 @@ select, option{
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+.baslik{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-weight: 550;
+    font-style: italic;
+    font-size: 16px;
+}
+
 .isim{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
+.radio{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .iletisim-formu{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    gap: 10px;
+    width: 410px;
+    gap: 15px;
 }
 
 .iletisim-formu input, .iletisim-formu textarea, select{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
 }
 
 .iletisim-formu button{
@@ -48,6 +64,7 @@ select, option{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
