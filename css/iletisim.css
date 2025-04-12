@@ -35,7 +35,7 @@ select, option{
     gap: 10px;
 }
 
-.iletisim-formu input, .iletisim-formu textarea{
+.iletisim-formu input, .iletisim-formu textarea, select{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
