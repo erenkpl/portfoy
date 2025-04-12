@@ -13,23 +13,28 @@
 
     <form class="iletisim-formu">
 
+        <!--Isim ve Soyisim alani-->
         <div class="isim">
             <div class="iletisim-formu">
                 <label for="isim">İsim:</label>
                 <input type="text" id="isim" name="isim" class="kutu" required>
             </div>
+
             <div class="iletisim-formu">
                 <label for="soyisim">Soyisim:</label>
                 <input type="text" id="soyisim" name="soyisim" class="kutu" required>
             </div>
         </div>
 
+        <!--Email Alani-->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" class="kutu" required>
 
+        <!--Mesaj Alani-->
         <label for="mesaj">Mesaj:</label>
         <textarea id="mesaj" name="mesaj" rows="4" class="kutu" required></textarea>
 
+        <!--Sehir Secimi-->
         <label for="sehir">Şehir:</label>
         <select id="sehir" name="sehir">
             <option value="ankara" selected>Ankara</option>
@@ -37,11 +42,13 @@
             <option value="Kayseri">Kayseri</option>
         </select>
 
+        <!--Hatirlama Opsiyonu-->
         <div>
             <input type="checkbox" id="hatirla" name="hatirla">
             <label>Beni Hatırla</label>
         </div>
 
+        <!--Cinsiyet Secimi-->
         <div>
             <label>Cinsiyet:</label>
             
