@@ -6,6 +6,10 @@ p{
     font-size: 20px;
 }
 
+select, option{
+    font-size: 14px;
+}
+
 .divupdate{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
