@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="iletisim.css">
 </head>
 
-<div>
+<div class="divupdate">
 
-    <p><strong>İletişim Formu</strong></p>
+    <p><strong class="paragraf">İletişim Formu</strong></p>
 
     <form class="iletisim-formu">
 
-        <label for="isim">İsim:</label>
-        <input type="text" id="isim" name="isim" required>
+        <div class="isim">
+            <div class="iletisim-formu">
+                <label for="isim">İsim:</label>
+                <input type="text" id="isim" name="isim" class="kutu" required>
+            </div>
+            <div class="iletisim-formu">
+                <label for="soyisim">Soyisim:</label>
+                <input type="text" id="soyisim" name="soyisim" class="kutu" required>
+            </div>
+        </div>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" class="kutu" required>
 
         <label for="mesaj">Mesaj:</label>
-        <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+        <textarea id="mesaj" name="mesaj" rows="4" class="kutu" required></textarea>
 
         <label for="sehir">Şehir:</label>
         <select id="sehir" name="sehir">
@@ -44,7 +52,7 @@
             <label for="kadin">Kadın</label>
 
             <input type="radio" id="Atak Helikopteri" name="cinsiyet">
-            <label for="Atak Helikopteri">A101 Poşeti</label>
+            <label for="Atak Helikopteri">Atak Helikopteri</label>
         </div>
 
         <button type="submit">Gönder</button>

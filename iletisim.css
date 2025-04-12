@@ -1,7 +1,30 @@
+body{
+    background-color: #f0f0f0;
+}
+
+.paragraf{
+    font-size: 20px;
+}
+
+.divupdate{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.kutu{
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.isim{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .iletisim-formu{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     gap: 10px;
 }
 
@@ -24,7 +47,7 @@
 .iletisim-formu button:hover{
     background-color: #345c75;
     transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .iletisim-formu button:active{
