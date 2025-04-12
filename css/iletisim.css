@@ -49,8 +49,10 @@ select, option{
 .iletisim-formu{
     display: flex;
     flex-direction: column;
-    width: 410px;
+    width: 350px;
     gap: 15px;
+    min-width: 10px;
+    flex-shrink: 1;
 }
 
 .iletisim-formu input, .iletisim-formu textarea, select{
