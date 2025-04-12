@@ -7,6 +7,8 @@ p{
 }
 
 select, option{
+    -webkit-appearance: none;
+    appearance: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
 }
