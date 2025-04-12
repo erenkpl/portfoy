@@ -9,8 +9,6 @@ p{
 select, option{
     -webkit-appearance: none;
     appearance: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
 }
 
 .divupdate{
@@ -39,6 +37,8 @@ select, option{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 
 .iletisim-formu button{
