@@ -18,7 +18,7 @@ p{
 .proje-container{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 5px;
 }
 
 .proje-baslik{
@@ -46,6 +46,7 @@ p{
     border-radius: 5px;
     padding: 20px;
     margin-left: 10px;
+    margin-right: 10px;
     font-size: 24px;
     cursor: pointer;
     box-shadow:  0 6px 15px rgba(0, 0, 0, 0.2);
@@ -67,6 +68,7 @@ p{
 @media (max-width: 768px){
     .proje-container{
         flex-direction: column;
+        gap: 15px;
     }
     .proje-kutusu{
         width: 100%;
