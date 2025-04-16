@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.proje-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.proje-baslik{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(254, 254, 254, 0.821);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.proje-aciklama{
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.proje-kutusu{
+    height: 200px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow:  0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(109, 135, 152);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.proje-kutusu:hover{
+    background-color: rgb(84, 104, 118);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.proje-kutusu:active{
+    transform: scale(0.95);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px){
+    .proje-container{
+        flex-direction: column;
+    }
+    .proje-kutusu{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    /* Resimleri göstermesin */
+}
