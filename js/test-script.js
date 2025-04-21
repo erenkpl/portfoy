@@ -2,7 +2,7 @@ const form = document.getElementById("comment-form");
 const grid = document.getElementById("commentsGrid");
 
 window.addEventListener("DOMContentLoaded", () => {
-    const storedComments = JSON.parse(localStorage.getItem("comments"))
+    const storedComments = JSON.parse(localStorage.getItem("comments")) || [];
     storedComments.forEach(addCommentToGrid);
 });
 
