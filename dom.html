@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Mini Laboratuvar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🧪 DOM Mini Laboratuvar</h2>
+
+  <div id="box" class="box">Ben bir kutuyum</div>
+
+  <button onclick="renkDegistir()">Rengi Değiştir</button>
+  <button onclick="yaziDegistir()">Yazıyı Değiştir</button>
+  <button onclick="kutuyuSil()">Kutuyu Sil</button>
+  <button onclick="yeniKutucuk()">Yeni Kutucuk Ekle</button>
+
+  <script>
+    function renkDegistir() {
+      const box = document.getElementById("box");
+      box.style.backgroundColor = "#f08080"; // Kırmızımsı renk
+    }
+
+    function yaziDegistir() {
+      const box = document.getElementById("box");
+      box.textContent = "Yazım değişti!";
+    }
+
+    function kutuyuSil() {
+      const box = document.getElementById("box");
+      if (box) box.remove();
+    }
+
+    function yeniKutucuk() {
+      const newBox = document.createElement("div");
+      newBox.classList.add("box");
+      newBox.textContent = "Yeni kutucuk!";
+      newBox.style.backgroundColor = "#90ee90"; // Açık yeşil
+      document.body.appendChild(newBox);
+    }
+  </script>
+
+</body>
+</html>
