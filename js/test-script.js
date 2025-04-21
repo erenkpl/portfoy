@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
 
     const newComment = {isim, yorum};
 
-    const currentComments = JSON.parse(localStorage.getItem("comments"))
+    const currentComments = JSON.parse(localStorage.getItem("comments"));
     currentComments.push(newComment);
 
     localStorage.setItem("comments", JSON.stringify(currentComments));
