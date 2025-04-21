@@ -9,10 +9,10 @@ window.addEventListener("DOMContentLoaded", () => {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const name = form.elements["isim"].value;
-    const comment = form.elements["yorum"].value;
+    const isim = form.elements["isim"].value;
+    const yorum = form.elements["yorum"].value;
 
-    const newComment = {name, comment};
+    const newComment = {isim, yorum};
 
     const currentComments = JSON.parse(localStorage.getItem("comments"))
     currentComments.push(newComment);
@@ -22,9 +22,9 @@ form.addEventListener("submit", (e) => {
     form.reset();
 });
 
-function addCommentToGrid({name, comment}){
+function addCommentToGrid({isim, yorum}){
     const div = document.getElementById("div");
     div.classList.add("comment-card");
-    div.innerHTML = `<h4>${name}</h4> <p>${comment}</p>`;
+    div.innerHTML = `<h4>${isim}</h4> <p>${yorum}</p>`;
     grid.prepend(div);
 }
