@@ -6,7 +6,6 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
 }
 
 .container{
@@ -17,12 +16,12 @@ body{
     background-color: #f1faee;
 }
 
-.kutu{ 
+.kutu{
+    margin-top: 10px; 
     background-color: #a8dadc;
     border: 2px solid #457b9d;
     padding: 20px;
     font-size: 24px;
-    margin-top: 10px;
 }
 
 @media (max-width: 768px){
@@ -32,7 +31,6 @@ body{
     }
 
     .kutu{
-        margin-bottom: 10px;
     }
 
 }
