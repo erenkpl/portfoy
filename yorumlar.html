@@ -1,0 +1,37 @@
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <link rel="stylesheet" href="css/yorumlar-style.css">
+    </head>
+
+    <h2>
+        Ziyaretçi Yorumları
+    </h2>
+
+    <br>
+
+    <div>
+        <form id="comment-form">
+            <div class="grid-first">
+                <div>
+                    <label>Adınız: <input type="text" name="isim" id="isim" required></label><br>
+                </div>
+                <div>
+                    <label>Yorumunuz: <br>
+                    <textarea name="yorum" id="yorum"></textarea>
+                    </label><br>
+                </div>
+            </div>
+            <button type="submit">Yorumu Gönder</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="commentsGrid" class="grid-container"></div>
+
+    <script src="js/yorumlar-script.js"></script>
+
+</html>
