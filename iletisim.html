@@ -1,82 +1,95 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" id="iletisim">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>İletişim</title>
-        <link rel="stylesheet" href="css/iletisim.css">
+        <link rel="stylesheet" href="css/style2.css">
     </head>
 
-    <div class="divupdate">
-
-        <p><strong>İletişim Formu</strong></p>
-
-        <form class="iletisim-formu" id="iletisim-bilgileri">
-
-            <!--Isim ve Soyisim alani-->
-            <div class="isim">
-                <div class="iletisim-formu">
-                    <label for="isim" class="baslik">İsim:</label>
-                    <input type="text" id="isim" name="isim" class="kutu" required>
-                </div>
-
-                <div class="iletisim-formu">
-                    <label for="soyisim" class="baslik">Soyisim:</label>
-                    <input type="text" id="soyisim" name="soyisim" class="kutu" required>
-                </div>
-            </div>
-
-            <!--Email Alani-->
-            <label for="email" class="baslik">Email:</label>
-            <input type="email" id="email" name="email" class="kutu" required>
-
-            <!--Mesaj Alani-->
-            <label for="mesaj" class="baslik">Mesaj:</label>
-            <textarea id="mesaj" name="mesaj" rows="4" class="kutu" required></textarea>
-
-            <!--Sehir Secimi-->
-            <label for="sehir" class="baslik">Şehir:</label>
-            <select class="kutu" id="sehir" name="sehir">
-                <option value="ankara" selected>Ankara</option>
-                <option value="istanbul">İstanbul</option>
-                <option value="Kayseri">Kayseri</option>
-            </select>
-
-            <!--Hatirlama Opsiyonu-->
-            <div>
-                <input type="checkbox" id="hatirla" name="hatirla">
-                <label >Beni Hatırla</label>
-            </div>
-
-            <!--Cinsiyet Secimi-->
-            <div class="isim">
-
-                <label class="baslik">Cinsiyet:</label>
-
-                <div class="radio">
-                    
-                    <div>
-                        <input type="radio" id="erkek" name="cinsiyet">
-                        <label for="erkek">Erkek</label>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="https://erenkpl.github.io/portfoy/proje">Projeler</a></li>
+                <li><a href="https://erenkpl.github.io/portfoy/test">Test</a></li>
+                <li><a href="https://erenkpl.github.io/portfoy/iletisim">İletişim</a></li>
+                <li><a href="https://erenkpl.github.io/portfoy/dom">Dom Laboratuvarı</a></li>
+                <li><a href="https://erenkpl.github.io/portfoy/yorumlar">Yorumlar</a></li>
+            </ul>
+        </nav>
+    
+        <div class="divupdate">
+    
+            <p><strong>İletişim Formu</strong></p>
+    
+            <form class="iletisim-formu" id="iletisim-bilgileri">
+    
+                <!--Isim ve Soyisim alani-->
+                <div class="isim">
+                    <div class="iletisim-formu">
+                        <label for="isim" class="baslik">İsim:</label>
+                        <input type="text" id="isim" name="isim" class="kutu" required>
                     </div>
-
-                    <div>
-                        <input type="radio" id="kadin" name="cinsiyet">
-                        <label for="kadin">Kadın</label>
+    
+                    <div class="iletisim-formu">
+                        <label for="soyisim" class="baslik">Soyisim:</label>
+                        <input type="text" id="soyisim" name="soyisim" class="kutu" required>
                     </div>
-
-                    <div>
-                        <input type="radio" id="Atak Helikopteri" name="cinsiyet">
-                        <label for="Atak Helikopteri">Atak Helikopteri</label>
-                    </div>
-                    
                 </div>
-            </div>
+    
+                <!--Email Alani-->
+                <label for="email" class="baslik">Email:</label>
+                <input type="email" id="email" name="email" class="kutu" required>
+    
+                <!--Mesaj Alani-->
+                <label for="mesaj" class="baslik">Mesaj:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" class="kutu" required></textarea>
+    
+                <!--Sehir Secimi-->
+                <label for="sehir" class="baslik">Şehir:</label>
+                <select class="kutu" id="sehir" name="sehir">
+                    <option value="ankara" selected>Ankara</option>
+                    <option value="istanbul">İstanbul</option>
+                    <option value="Kayseri">Kayseri</option>
+                </select>
+    
+                <!--Hatirlama Opsiyonu-->
+                <div>
+                    <input type="checkbox" id="hatirla" name="hatirla">
+                    <label >Beni Hatırla</label>
+                </div>
+    
+                <!--Cinsiyet Secimi-->
+                <div class="isim">
+    
+                    <label class="baslik">Cinsiyet:</label>
+    
+                    <div class="radio">
+                        
+                        <div>
+                            <input type="radio" id="erkek" name="cinsiyet">
+                            <label for="erkek">Erkek</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="kadin" name="cinsiyet">
+                            <label for="kadin">Kadın</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="Atak Helikopteri" name="cinsiyet">
+                            <label for="Atak Helikopteri">Atak Helikopteri</label>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    
+        <div id="sonuc"></div>
+        <script src="js/iletisim-script.js"></script>
+    </body>
 
-            <button type="submit">Gönder</button>
-        </form>
-    </div>
-
-    <div id="sonuc"></div>
-    <script src="js/iletisim-script.js"></script>
 </html>

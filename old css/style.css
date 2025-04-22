@@ -8,33 +8,6 @@ body {
     text-align: center;
 }
 
-nav{
-    background-color: #333;
-    padding: 10px 0;
-}
-
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li{
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover{
-    color: #ff6347;
-}
-
 .custom-button{
     background-color: rgb(74, 197, 156);
     color: rgb(38, 52, 52);
